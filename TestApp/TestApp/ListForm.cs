@@ -28,7 +28,7 @@ namespace TestApp
         {
             DirectoryInfo directoryInfo = new DirectoryInfo(path);
             files = directoryInfo.GetFiles(searchPattern);
-            listBox1.DataSource = files;
+            listBox1.Items.AddRange(files);
         }
         public FileInfo[] GetItems()
         {
